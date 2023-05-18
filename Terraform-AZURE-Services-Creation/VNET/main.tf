@@ -13,7 +13,7 @@ provider "azurerm" {
 }
 resource "azurerm_resource_group" "rgtf" {
   name     = "devopsthehardway-rg"
-  location = "westus2"
+  location = var.location
 }
 data "azurerm_resource_group" "resource_group" {
   name     = "${var.name}-rg"
