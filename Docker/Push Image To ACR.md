@@ -4,13 +4,13 @@ The ECR repo will be where you store the Docker image that you created on your l
 
 ## Log Into The ECR Repository
 1. Log in to ACR with Azure CLI
-`az acr login --name devopsthehardwayacr`
+`az acr login --name devopsthehardwayacr1`
 
 
 ## Tag The Docker image
 1. Tag the Docker image
-`docker tag uberapp devopsthehardwayacr.azurecr.io/uberapp:v1`
+`docker tag uberapp devopsthehardwayacr1.azurecr.io/uberapp:v1`
 
 ## Push The Docker Image To ACR
 1. Push the Docker image to ACR
-`docker push devopsthehardwayacr.azurecr.io/uberapp:v1`
+`docker push devopsthehardwayacr1.azurecr.io/uberapp:v1`
