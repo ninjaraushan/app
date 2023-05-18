@@ -113,7 +113,7 @@ resource "azurerm_role_assignment" "node_infrastructure_update_scale_set" {
 }
 
 data "azurerm_container_registry" "example" {
-  name                = "${var.name}"
+  name                = var.name
   resource_group_name = data.azurerm_resource_group.resource_group.name
 }
 
